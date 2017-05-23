@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="help_info_tab">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>401</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Dasboard">
+     <attribute name="title">
+      <string>Dashboard</string>
+     </attribute>
+     <widget class="QStackedWidget" name="dashboard_stack">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>391</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="Show_info">
+       <widget class="QStackedWidget" name="inside_dashboard_stack">
+        <property name="geometry">
+         <rect>
+          <x>29</x>
+          <y>180</y>
+          <width>331</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="info_display_2">
+         <widget class="QPushButton" name="add_meal_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add Meal</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="add_exercise_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>60</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add Exercise</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="undo_Button">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>140</y>
+            <width>131</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Undo</string>
+          </property>
+          <property name="icon">
+           <iconset resource="fit_map_rescource.qrc">
+            <normaloff>:/new/prefix_icons/undo.png</normaloff>:/new/prefix_icons/undo.png</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="add_meal">
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>30</y>
+            <width>231</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>How many calories was your meal?</string>
+          </property>
+         </widget>
+         <widget class="QDialogButtonBox" name="buttonBox_addmeal">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>110</y>
+            <width>164</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="standardButtons">
+           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>70</y>
+            <width>151</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="add_exercise">
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>30</y>
+            <width>221</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>How many calories did you burn?</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QDialogButtonBox" name="buttonBox_addexorcise">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>110</y>
+            <width>164</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="standardButtons">
+           <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>70</y>
+            <width>151</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="wrapping">
+           <bool>true</bool>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="geometry">
+         <rect>
+          <x>37</x>
+          <y>90</y>
+          <width>341</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>341</width>
+          <height>34</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>98</number>
+        </property>
+        <property name="value">
+         <number>24</number>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="calories_left">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>50</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+         </font>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Calories Remaining</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="new_Day_Button">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>110</y>
+          <width>111</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="fit_map_rescource.qrc">
+          <normaloff>:/new/prefix_icons/clock.png</normaloff>:/new/prefix_icons/clock.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>160</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>New Day</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Get_name">
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>361</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Welcome! Let's set up your profile.</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>100</y>
+          <width>151</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>What is your name?</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="InputUserName">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>120</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="next_page_1">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Next</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="get_info">
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>361</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Let's  personalize your FitMap</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>60</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QRadioButton" name="FemaleRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="MaleRadioButton">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>20</y>
+           <width>100</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QSpinBox" name="InputAgeSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>140</y>
+          <width>121</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="suffix">
+         <string>   years</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="InputWeightSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>190</y>
+          <width>121</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="suffix">
+         <string> lbs</string>
+        </property>
+        <property name="maximum">
+         <double>999.990000000000009</double>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="InputInchesSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>240</y>
+          <width>71</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="suffix">
+         <string> in</string>
+        </property>
+        <property name="maximum">
+         <double>11.990000000000000</double>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>140</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Age</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>190</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Weight</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>240</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Height</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="next_page_2">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Next</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="back_button_page_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="InputFeetSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>240</y>
+          <width>48</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="suffix">
+         <string> ft</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="get_activity">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>30</y>
+          <width>281</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Activity Level</string>
+        </property>
+        <widget class="QRadioButton" name="radio_activity_1">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>251</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Little to no exercise</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radio_activity_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>70</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Light (1-3 day per week)</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radio_activity_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Moderate (3-5 days per week)</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radio_activity_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Heavy (6-7 days per week)</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radio_activity_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>190</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Very Heavy (twice per day)</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="next_button_page_3">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Next</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="back_button_page_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="get_goal">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>110</y>
+          <width>201</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QRadioButton" name="radioButton_5">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>20</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lose Weight</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_6">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>60</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Maintain Weight</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_7">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>100</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Gain Weight</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>201</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>What is your goal?</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="next_button_page_4">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Next</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="back_button_page_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>340</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleGothic</family>
+        <pointsize>31</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>FitMap</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="fit_map_rescource.qrc">:/new/prefix_icons/Logomakr_1z7AIL.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Exercise">
+     <attribute name="title">
+      <string>Information</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>351</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Body Mass Index</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QTextBrowser" name="DisplayBMI">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BMI</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>321</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>a measure of body fat that gives an indication of nutritional status.</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>351</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Basal Metabolic Rate</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QTextBrowser" name="DisplayBMR">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BMR</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>321</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>The rate at which oxygen is utilized in a fasting subject at complete rest as a percentage of a value established as normal for such a subject. </string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>300</y>
+        <width>351</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Active Metabolic Rate</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>AMR</string>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="DisplayAMR">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>321</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>BMR adjusted to incorporate activity level.</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Settings">
+     <attribute name="title">
+      <string>Settings</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Accessablility </string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Color</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QPushButton" name="DefaultBackgroundButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Default</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="WhiteBackgroundButton">
+       <property name="geometry">
+        <rect>
+         <x>172</x>
+         <y>40</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>High Contrast</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="resetAccountButton">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>70</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset Account</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>331</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Zoom </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QPushButton" name="Size13FontButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Default</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Size18FontButton">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Large</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="editButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edit Information</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Account</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>430</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleGothic</family>
+        <pointsize>31</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>FitMap</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>410</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="fit_map_rescource.qrc">:/new/prefix_icons/Logomakr_1z7AIL.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>460</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Proudly engineered in Las Vegas</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="fit_map_rescource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox_addexorcise</sender>
+   <signal>accepted()</signal>
+   <receiver>spinBox_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>382</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox_addexorcise</sender>
+   <signal>rejected()</signal>
+   <receiver>spinBox_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>391</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox_addmeal</sender>
+   <signal>accepted()</signal>
+   <receiver>spinBox</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>393</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox_addmeal</sender>
+   <signal>rejected()</signal>
+   <receiver>spinBox</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>398</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
